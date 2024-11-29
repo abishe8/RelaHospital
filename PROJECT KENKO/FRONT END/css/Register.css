@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+.register {
+  height: 100vh;
+  background-color: #1d0a4c;
+  padding: 0 15px;
+}
+.register-wrapper {
+  display: grid;
+  grid-template-rows: 0.5fr 2fr;
+  height: 100vh;
+  justify-content: center;
+}
+
+.logoalign {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+}
+.register-logo{
+  width: 247px;
+}
+
+.toregister {
+  display: flex;
+  flex-direction: column;
+}
+
+.toregister > label {
+  margin: 10px 0px;
+  color: #a4a4a4;
+}
+
+.btnsubmit {
+  margin-top: 50px;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  border: none;
+  padding: 12px 8px;
+  border-radius: 15px;
+  color: white;
+  font-size: medium;
+  font-family: "Poppins", sans-serif;
+}
+
+.inputbox {
+  background: radial-gradient(
+    90.16% 143.01% at 15.32% 21.04%,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.0447917) 77.08%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(12.156224250793457px);
+  border: none;
+  border: 1px solid #a4a4a4;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+}
+.testcase {
+  height: 100px;
+}
+
+.uhidnumber {
+  background: radial-gradient(
+    90.16% 143.01% at 15.32% 21.04%,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.0447917) 77.08%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(12.156224250793457px);
+  border: none;
+  border: 1px solid #a4a4a4;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  padding-right: 2px;
+  justify-content: space-between;
+
+}
+
+.uhidnumber > div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+input{
+  background-color: transparent;
+  border: none;
+  padding: 5px 5px;
+  padding-top: 6px;
+  font-size: 15px;
+  color: #a4a4a4;
+  width: 100%;
+}
+.regnumber{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+span {
+  font-size: 15px;
+  color: #a4a4a4;
+}
+input:focus {
+  outline: none;
+}
+.dropdown {
+  margin: 0px 0px;
+  z-index: 1000 !important;
+  position: relative;
+}
+
+.dropdown > li {
+  background-color: #3c2c61;
+  padding: 7px 8px;
+  border: 1px solid #a4a4a4;
+  color: #a4a4a4;
+}
+
+.dropdown > li:nth-child(1) {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.dropdown > li:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
+
+
+@media(max-width:400px){
+
+  .register-logo{
+    width: 200px;
+  }
+  .inputbox{
+    height: 45px;
+  }
+  .uhidnumber{
+    
+    height: 50px;
+
+  }
+
+}
+@media(max-height:700px){
+
+  .register-logo{
+    width: 150px;
+  }
+  .toregister{
+    padding: 20px 0;
+  }
+  .inputbox{
+    height: 40px;
+  }
+  .uhidnumber{
+    
+    height: 45px;
+
+  }
+  .btnsubmit{
+    height: 45px;
+
+  }
+  .toregister > label{
+    font-size: 15px;
+  }
+
+}

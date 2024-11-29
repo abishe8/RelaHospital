@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.front {
+  background-image: url("/assets/images/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.front-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tap {
+  color: #7f7676;
+  margin-bottom: 40px;
+  /* font-size: 18px;  */
+  font-weight: 500;
+  letter-spacing: 0.7px;
+
+}
+
+.intrologo{
+  margin-bottom: 30px;
+  width: 200px;
+  height: auto;
+}

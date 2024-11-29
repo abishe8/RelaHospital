@@ -1,0 +1,27 @@
+body {
+  font-family: "poppins";
+ 
+}
+
+.rotate-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1d0a4c;
+
+}
+
+.rotate-logo {
+  width: 124px;
+  animation: scaleUp 1s ease-in-out forwards;
+}
+
+@keyframes scaleUp {
+  0% {
+    width: 124px;
+  }
+  100% {
+    width: 194px;
+  }
+}

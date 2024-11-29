@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.steps {
+  background-image: url("/assets/images/17.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px;
+  padding-bottom: 100px;
+  
+}
+
+.canvapre {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 5px;
+}
+
+.levels {
+  position: absolute;
+  top: 0;
+  left: 30%;
+}
+
+.levels > ul > li:last-child {
+  margin-bottom: 0;
+
+}
+
+
+/* 1 */
+
+.list__elements{
+  margin-bottom: 370px;
+  background: linear-gradient(180deg, #0a2724 26.5%, #0d1f2c 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  position:relative;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin-left: 0;
+}
+
+.list__lastElement{
+  margin-bottom: 370px;
+  background: linear-gradient(180deg, #0a2724 26.5%, #0d1f2c 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  position:relative;
+  height: 120px;
+  width: 270px;
+  border-radius:100px;
+  margin-left: -50px;
+}
+
+/* 2 */
+.circle__innerText{
+  display: none;
+  max-width: 0;
+  padding-left: 0px;
+}
+
+
+.circle__lastInnertext{
+  display: block;
+  max-width: 180px;
+  padding-left: 10px;
+}
+
+/* 3 */
+.checkboxhide{
+    display: none; 
+}
+
+.checkboxShow{
+  display: block;
+}
+
+
+/* CheckBox Start */
+.checkbox-wrapper{
+   position: absolute;
+   right: 15px; 
+   top: 0; 
+}
+/* CheckBox End */
+
+
+li.disabled {
+  pointer-events: none; /* Prevents further clicks */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Prevents interaction */
+  /* overflow: hidden; */
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 15px; /* Adjust height for paper-like shape */
+  background-color: white; /* Base color */
+  border: 1px solid #ccc; /* Optional border for paper effect */
+  opacity: 0;
+  animation-name: fall;
+  animation-timing-function: linear;
+  pointer-events: none; /* Prevents interaction */
+}
+
+/* Animation for falling confetti */
+@keyframes fall {
+  0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(100vh) rotate(720deg); /* Fall down and spin */
+      opacity: 0; /* Fade out */
+  }
+}
+
