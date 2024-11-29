@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .final {
+    background-color: #1d0a4c;
+    height: 100vh;
+  }
+  
+  .final-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .final-wrapper >h3{
+    color: #847B7B;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    
+  }
+  .final-wrapper >h3:nth-child(2){
+      margin-top: 20px;
+  }
+  .final-wrapper > img{
+    width: 176px;
+  }

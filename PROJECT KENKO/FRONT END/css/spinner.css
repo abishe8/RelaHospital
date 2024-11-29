@@ -1,0 +1,48 @@
+body {
+  font-family: "poppins";
+}
+
+.circle-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: display 3s;
+   background-color: #1d0a4c;
+}
+
+.circle-container {
+  background-image: url(/assets/images/Ellipse.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  position: fixed; /* Fix the circle in place */
+  left: -50vw;
+  transition: left 2s ease;
+  top: 50%; /* Vertically center the circle */
+  overflow: hidden;
+}
+
+.circle-test-text {
+  color: #a4a4a4;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateX(-30px); /* Initial off-screen position */
+  transition: opacity 1s ease, transform 1s ease; /* Smooth transition */
+}
+
+.number-image {
+  opacity: 0;
+  transform: translateY(-30px); /* Initial off-screen position */
+  transition: opacity 1s ease, transform 1s ease; /* Smooth transition */
+}
+
+/* Class to trigger the animation */
+.animate-in {
+  opacity: 1;
+  transform: translateY(0); /* Move to normal position */
+}
